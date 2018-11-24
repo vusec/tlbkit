@@ -22,7 +22,7 @@ under some tlb size and structure assumptions (works on skylake), probe
 cross-thread tlb interference
 
 ```console
-./env/bin/python crossthread.py
+./env/bin/python py/crossthread.py
 ```
 
 on skylake, the results should look like in the demo/ dir.
@@ -31,7 +31,7 @@ Calculate TLB miss latency
 =============================
 
 ```console
-./env/bin/python tlb-latency.py
+./env/bin/python py/tlb-latency.py
 ```
 
 on skylake, the results should look like in demo/skylake-latencies.txt.
