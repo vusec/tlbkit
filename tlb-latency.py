@@ -81,7 +81,7 @@ if __name__ == "__main__":
             print 'Found'
             print ''
             break
-    for l2_size in range(7,16):
+    for l2_size in range(1,16):
         l2_pagelist_misses=tlblib.generate_set_l2_general(1,l2_size+1)
         l2misses1,l2cycles1 = test_latency_and_miss_per_iteration(l2_pagelist_misses, 'dtlb_load_misses.miss_causes_a_walk', 'l2 miss test size ' + str(l2_size))
         if l2misses1 > 1:

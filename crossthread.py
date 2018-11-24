@@ -45,8 +45,12 @@ def test_cores(argtype,setsize,nsets,event,pdfname, level, iterate=50000):
                    o1, stderrdata1 = p1.communicate()
                    o2, stderrdata2 = p2.communicate()
                    if p1.returncode != 0:
+                       print 'stdout:', o1
+                       print 'stderr:', stderrdata1
                        raise Exception('popen 1 failed')
                    if p2.returncode != 0:
+                       print 'stdout:', o2
+                       print 'stderr:', stderrdata2
                        raise Exception('popen 2 failed')
                    yset1 = perf.out_to_fields(o1)
                    yset2 = perf.out_to_fields(o2)
