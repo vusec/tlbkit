@@ -1,0 +1,41 @@
+
+ * Probing set sizes
+
+calculating dtlb_load_misses.stlb_hit and cycles slope for l1 miss test size 1 . . . . done. misses: 0.0, cycles: 95.6
+calculating dtlb_load_misses.stlb_hit and cycles slope for l1 miss test size 2 . . . . done. misses: 0.0, cycles: 142.9
+calculating dtlb_load_misses.stlb_hit and cycles slope for l1 miss test size 3 . . . . done. misses: 0.0, cycles: 189.5
+calculating dtlb_load_misses.stlb_hit and cycles slope for l1 miss test size 4 . . . . done. misses: 5.0, cycles: 281.0
+Found
+
+calculating dtlb_load_misses.miss_causes_a_walk and cycles slope for l2 miss test size 7 . . . . done. misses: 0.0, cycles: 449.3
+calculating dtlb_load_misses.miss_causes_a_walk and cycles slope for l2 miss test size 8 . . . . done. misses: 0.0, cycles: 504.2
+calculating dtlb_load_misses.miss_causes_a_walk and cycles slope for l2 miss test size 9 . . . . done. misses: 0.0, cycles: 559.9
+calculating dtlb_load_misses.miss_causes_a_walk and cycles slope for l2 miss test size 10 . . . . done. misses: 0.0, cycles: 616.2
+calculating dtlb_load_misses.miss_causes_a_walk and cycles slope for l2 miss test size 11 . . . . done. misses: 0.0, cycles: 670.7
+calculating dtlb_load_misses.miss_causes_a_walk and cycles slope for l2 miss test size 12 . . . . done. misses: 12.9, cycles: 1026.3
+Found
+
+L1 size: 4 L2 size: 12
+Assuming L1dTLB set size: 4
+Assuming L2dTLB/STLB set size: 12
+
+ * Configuring miss and no-miss TLB sets of equal size
+
+l1 misses:    [1, 17, 33, 49, 65]
+l1 no misses: [1, 17, 33, 50, 66]
+l2 misses:    [65537, 131073, 196609, 262145, 327681, 393217, 458753, 524289, 589825, 655361, 720897, 786433, 851969]
+l2 no misses: [65537, 131073, 196609, 262145, 327681, 393217, 458753, 524289, 589825, 655361, 720897, 786434, 851970]
+
+ * Probing miss rate and latency differences of miss and no-miss sets of equal size
+
+calculating dtlb_load_misses.stlb_hit and cycles slope for l1 miss list . . . . done. misses: 5.0, cycles: 280.9
+calculating dtlb_load_misses.stlb_hit and cycles slope for l1 no-miss list . . . . done. misses: 0.0, cycles: 235.7
+calculating dtlb_load_misses.miss_causes_a_walk and cycles slope for l2 miss list . . . . done. misses: 13.0, cycles: 1027.8
+calculating dtlb_load_misses.miss_causes_a_walk and cycles slope for l2 no-miss list . . . . done. misses: 0.0, cycles: 707.4
+
+ * Results
+
+L1TLB misses for miss/no-miss set: 5.00 vs 0.00. Cycles per iteration: 280.9 vs 235.7
+Extra misses: 5.00 extra cycles: 45.20 cycles per miss: 9.04
+L2TLB misses for miss/no-miss set: 13.00 vs 0.00. Cycles per iteration: 1027.8 vs 707.4
+Extra misses: 13.00 extra cycles: 320.38 cycles per miss: 24.65
