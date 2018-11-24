@@ -1,3 +1,7 @@
+Demo
+====
+![Skylake demo pic](demo-crossthread/skylake-tlbsets-ht.png?raw=true "Crossthread interference result on skylake")
+
 Layout
 ======
 
@@ -45,11 +49,6 @@ Calculate TLB miss latency
 ```
 
 on skylake, the results should look like in demo/skylake-latencies.txt.
-
-Demo
-====
-
-![Skylake demo pic](demo-crossthread/skylake-tlbsets-ht.png?raw=true "Crossthread interference result on skylake")
 
 
 Enjoy!
