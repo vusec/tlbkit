@@ -1,4 +1,4 @@
-0. Setup
+Setup
 ========
 
 To run:
@@ -19,7 +19,7 @@ $ ./env/bin/pip install -r requirements.txt
 
 $ echo -1 | sudo tee /proc/sys/kernel/perf_event_paranoid
 
-1. Inter-hyperthread tlb interference shown using performance counters
+Inter-hyperthread tlb interference shown using performance counters
 ===================================================================
 
 under some tlb size and structure assumptions (works on skylake), probe
@@ -29,7 +29,7 @@ $ ./env/bin/python crossthread.py
 
 on skylake, the results should look like in the demo/ dir.
 
-2. Calculate TLB miss latency
+Calculate TLB miss latency
 =============================
 
 $ ./env/bin/python tlb-latency.py
