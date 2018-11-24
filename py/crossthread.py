@@ -22,7 +22,7 @@ def test_cores(argtype,setsize,nsets,event,pdfname, level, iterate=50000):
     print 'picking 2nd pair of logical processors:', corepair
     c1, c2 = corepair
     misses=numpy.zeros((nsets,nsets))
-    numpyfn='results/' + pdfname+'-'+str(iterate)+'.npy'
+    numpyfn='results-crossthread/' + pdfname+'-'+str(iterate)+'.npy'
     if not os.path.isfile(numpyfn):
            for set_id1 in range(nsets):
                for set_id2 in range(nsets):
@@ -100,7 +100,7 @@ if __name__ == "__main__":
     cbar_ax = f.add_axes([0.85, 0.38, 0.05, 0.25])
     f.colorbar(pcm, cax=cbar_ax)
 
-    plt.savefig('results/' + cpu_uarch + '-tlbsets-ht.pdf', bbox_inches='tight')
-    plt.savefig('results/' + cpu_uarch + '-tlbsets-ht.png', bbox_inches='tight')
+    plt.savefig('results-crossthread/' + cpu_uarch + '-tlbsets-ht.pdf', bbox_inches='tight')
+    plt.savefig('results-crossthread/' + cpu_uarch + '-tlbsets-ht.png', bbox_inches='tight')
     plt.close()
 
