@@ -1,5 +1,15 @@
+Layout
+======
+
+c: C code
+py: python code
+demo-crossthread: examples of crossthread interference output
+demo-latencies: examples of latency measurement output
+results-crossthread: output dir for crossthread code
+results-latencies: output dir for latency measurement code
+
 Setup
-========
+=====
 
 To run:
 
