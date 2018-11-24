@@ -31,7 +31,7 @@ Calculate TLB miss latency
 =============================
 
 ```console
-$ ./env/bin/python tlb-latency.py
+./env/bin/python tlb-latency.py
 ```
 
 on skylake, the results should look like in demo/skylake-latencies.txt.
