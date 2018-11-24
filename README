@@ -1,5 +1,5 @@
-Inter-hyperthread tlb interference shown using performance counters
-===================================================================
+0. Setup
+========
 
 To run:
 
@@ -9,11 +9,22 @@ To run:
 
 $ make -C c
 
-2. run the python code
+2. set up the puthon environment
 
-$ python crossthread.py
+$ rm -rf env
+$ virtualenv -p python2.7 env
+$ ./env/bin/pip install -r requirements.txt
 
-Calculate TLB miss latency
-==========================
 
+1. Inter-hyperthread tlb interference shown using performance counters
+===================================================================
+
+under some tlb assumptions, probe cross-thread tlb interference
+
+$ ./env/bin/python crossthread.py
+
+2. Calculate TLB miss latency
+=============================
+
+$ ./env/bin/python tlb-latency.py
 
